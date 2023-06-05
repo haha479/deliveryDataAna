@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+	<!-- Hive在HDFS的工作目录,以下也为默认值 -->
+	<property>
+		<name>hive.metastore.warehouse.dir</name>
+		<value>/user/hive/warehouse</value>
+	</property>
+	<!-- s 配置作为客户端连接metastore服务 -->
+	<!-- 指定metastore服务的地址 -->
+    	<property>
+            <name>hive.metastore.uris</name>
+            <value>thrift://hadoop102:9083</value>
+    	</property>
+	<!-- e -->
+</configuration>
