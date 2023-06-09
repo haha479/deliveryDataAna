@@ -1,0 +1,17 @@
+#sqoop 导入外卖数据库里面里面的除td_new_old_info以外的表
+import-all-tables
+--connect
+jdbc:mysql://hadoop102:3306/waimai
+--username
+root
+--password
+123479
+--num-mappers
+1
+--fields-terminated-by
+","
+--hive-database
+waimai
+--hive-import
+--exclude-tables
+td_new_old_info
